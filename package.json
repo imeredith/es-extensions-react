@@ -1,0 +1,68 @@
+{
+  "name": "@imeredith/es-extensions-react",
+  "version": "0.1.7",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imeredith/es-extensions-react.git"
+  },
+  "author": "Ivan Meredith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imeredith/es-extensions-react/issues"
+  },
+  "homepage": "https://github.com/imeredith/es-extensions-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@types/jest": "^23.3.5",
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/react-addons-test-utils": "^0.14.22",
+    "@types/react-dom": "^16.0.9",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-15.4": "^1.1.1",
+    "jest": "^23.6.0",
+    "jest-environment-enzyme": "^7.0.0",
+    "jest-enzyme": "^7.0.0",
+    "jsdom": "^12.2.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "ts-jest": "^23.10.4",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@imeredith/es-extensions-api": "file:../api",
+    "react": "^15.4.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react15.4"
+    }
+  }
+}
